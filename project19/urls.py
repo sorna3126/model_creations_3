@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from app.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('display_country/',display_country,name='display_country'),
+    path('display_capital/',display_capital,name='display_capital'),
 ]
